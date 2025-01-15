@@ -70,6 +70,7 @@ jobs:
   destroy:
     name: Destroy Terraform Resources
     runs-on: ubuntu-latest
+    needs: terraform
     if: github.event_name == 'workflow_dispatch'
     steps:
     - name: Checkout Repository
