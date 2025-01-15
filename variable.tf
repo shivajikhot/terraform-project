@@ -3,7 +3,7 @@ variable "region" {
 }
  
 variable "s3_bucket_name" {
-  default = "terraform-s3-bucket-${random_id.bucket_suffix.hex}"
+  default = "terraform-demo-s3-bucket"
 }
  
 variable "ami" {
